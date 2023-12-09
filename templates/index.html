@@ -1,0 +1,113 @@
+<!-- input.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Predictor</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background: linear-gradient(to right, #28a745, #218838); /* Blue gradient */
+            color: #fff; /* Text color */
+        }
+
+        /* Add more custom styles as needed */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <h1>Heart Disease Predictor</h1>
+                <form action="/predict" method="post">
+                    <label for="age">1. Age-5YR 1-14 </label>
+        <input type="text" id="age" name="age" required>
+<br>
+<br>
+        <label for="sex">2.  Sex 1=M 0=F</label>
+        <input type="text" id="sex" name="sex" required>
+        <br>
+        <br>
+        <label for="bmi">3. BMI 1-4</label>
+        <input type="text" id="bmi" name="bmi" required>
+        <br>
+        <br>
+        <label for="bp_meds">4.  BP meds</label>
+        <input type="text" id="bp_meds" name="bp_meds" required>
+
+        <br>
+        <br>
+
+        <label for="diabetes">5.  Diabetes</label>
+        <input type="text" id="diabetes" name="diabetes" required>
+<br>
+<br>
+
+        <label for="high_cholesterol">6.  High Cholesterol</label>
+        <input type="text" id="high_cholesterol" name="high_cholesterol" required>
+        <br>
+        <br>
+        <label for="kidney_disease">7.  Kidney Disease</label>
+        <input type="text" id="kidney_disease" name="kidney_disease" required>
+        <br>
+        <br>
+        <label for="heart_attack">8.  Heart Attack</label>
+        <input type="text" id="heart_attack" name="heart_attack" required>
+        <br>
+        <br>
+        <label for="stroke">9. Stroke </label>
+        <input type="text" id="stroke" name="stroke" required>
+        <br>
+        <br>
+        <label for="heavy_alcohol">10. Heavy Alcohol</label>
+        <input type="text" id="heavy_alcohol" name="heavy_alcohol" required>
+        <br>
+<br>
+        <label for="diff_walk">11. Difficulty Walking</label>
+        <input type="text" id="diff_walk" name="diff_walk" required>
+        <br>
+        <br>
+        <label for="smoke_now">12. Current Smoker</label>
+        <input type="text" id="smoke_now" name="smoke_now" required>
+        <br>
+        <br>
+        
+
+        <label for="exercise">13. Exercise</label>
+        <input type="text" id="exercise" name="exercise" required>
+        <br>
+       
+<br>
+<br>
+
+
+
+
+
+
+
+                    <button type="submit" class="btn btn-light">SUBMIT</button>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <!-- Add your image here -->
+                <img src="cardio.png" alt="Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
