@@ -1,0 +1,20 @@
+/* Set a background image */
+body {
+    background: url('cardi.png') no-repeat center center fixed;
+    background-size: cover;
+}
+/* Style the form container */
+#formWizard {
+    width: 25%;
+    margin: 180px auto 0;
+    padding: 20px;
+    box-shadow: 0 100px 150px rgba(0, 0, 0.75, 0.75);
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364) !important;
+}
+/* Style the labels */
+#formWizard label {
+    color: white;
+    margin-bottom: 20px;
+    
+}
+
