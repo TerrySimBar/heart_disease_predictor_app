@@ -1,6 +1,9 @@
-from flask import Flask, request, render_template
+# Set up the Flask app dependencies
+from flask import Flask, render_template, request
 import joblib
 import numpy as np
+import random
+import string
 
 app = Flask(__name__)
 
@@ -18,7 +21,11 @@ def preprocess_input(data):
 def index():
     return render_template('index.html')
 
-# Define the prediction route
+# Define the prediction result page route with random code generation
+def generate_random_code():
+    characters = string.hexdigits
+    return ''.join(random.choice(characters) for _ in range(5))
+
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.form.to_dict()
@@ -29,8 +36,15 @@ def predict():
     # Make predictions using the loaded model
     predictions = loaded_model.predict(input_data)
 
+    # Generate random code based on the prediction
+    prediction = int(predictions[0])
+    if prediction == 1:
+        random_code = generate_random_code()
+    else:
+        random_code = None 
+
     # Render the `result.html` template with the prediction results
-    return render_template('result.html', prediction=int(predictions[0]))
+    return render_template('result.html', prediction=prediction, random_code=random_code)
 
 if __name__ == '__main__':
     app.run(debug=True)

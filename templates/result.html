@@ -7,17 +7,42 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/result_style.css">
-
 </head>
 <body>
-    <div id="prediction-container">
-        <div id="prediction">
-            {% if prediction == 1 %}
-                <p>REFERRAL RECOMMENDED</p>
-            {% else %}
-                <p>NO REFERRAL RECOMMENDED</p>
-            {% endif %}
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg custom-navbar navbar-light">
+        <a class="navbar-brand" href="#">
+                 CARDIOLOGY
+        </a>
+        
+        <div class="container">
+            <div class="btn-tool" role="group" aria-label="Raw Data Group">
+                <a href="https://www.cdc.gov/brfss/annual_data/2015/pdf/codebook15_llcp.pdf" class="btn btn-secondary" target="_blank">BRFSS</a>
+                <a href="https://www.php.net/manual/en/index.php" class="btn btn-secondary" target="_blank">MANUAL</a>
+             
+            </div>
+
+
+            <div class="btn-tool" role="group" aria-label="Raw Data Group">
+                <a href="https://www.montefiore.org/cardiology-services?utm_source=TMG_Google&utm_medium=SEM&utm_campaign=Cardiac_MB_Research_Bronx&utm_term=Cardiac" class="btn btn-secondary" target="_blank">REFER NOW</a>
+                <a href="https://www.cigna.com/knowledge-center/what-is-prior-authorization" class="btn btn-secondary" target="_blank">REQUEST AUTHORIZATION</a>
+            </div>
         </div>
+    </nav>
+    <!--Prediction Result-->
+<div id="prediction-container">
+    <div id="prediction">
+        {% if prediction == 1 %}
+            <p>REFERRAL RECOMMENDED</p>
+            {% if random_code %}
+            <p id="random-code">{{ random_code }}</p>
+            {% endif %}  
+        {% else %}
+            <p>NO REFERRAL RECOMMENDED</p>
+        {% endif %}
     </div>
+</div>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </body>
 </html>
