@@ -133,13 +133,6 @@ The HTML files (`index.html`and `result.html`) in this project is structured as 
 #### CSS Styling
 The CSS file (`index_style.css` and `result_style.css`) is used to style the HTML elements. The following are the key steps in the styling process:
 
-navbar: with title and functioning buttons 
-
-
-body: background picture with no repeat  
-
-
-formWizard: size, position, padding, linear gradient color, shadow
 1. **Set Up the Body** The `body` element is styled with a background image set to `no-repeat` and `center`. 
 2. **Set Up the Navbar** The `navbar` element is styled with gradient colors and functioning buttons that link to external 
 resources.
