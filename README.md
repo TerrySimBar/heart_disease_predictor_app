@@ -1,7 +1,8 @@
 # heart_disease_predictor
 A supervised machine learning project which uses Python (Pandas, NumPy, Scikit-learn, Flask, Joblib) HTML, CSS, and JavaScript technologies to build a binary classifier, which performs with at least 90% accuracy, to make predictions about the risk of heart disease.
 <br>
-The project features a full stack-front and back end development tools-to create a functional application that satisfies modern industry standards.  
+<br>
+The project features a full stack-front and back end development-to create a functional application that satisfies modern industry standards.  
 <br>
 
 <img src="static/images/home.png" width="1600">   
@@ -33,7 +34,7 @@ The National Health Insurance Equity Board is looking to lower the number of “
 Our organization is contracted to develop an application which can be used as a baseline for primary care doctors to use to generate codes to make cardiology referrals. 
 <br>
 
-The application features a navigation bar with buttons to navigate to external resources such as a manual and code book, and pages for making referrals and requesting authorization for referrals when they are not recommended but believed to be necessary. 
+The application features a navigation bar with buttons to navigate to external resources such as a manual and code book. Users can also navigate to webpages for making referrals or requesting authorization for referrals that are not recommended but believed to be necessary. 
 <br>
 
 <br>
@@ -50,8 +51,10 @@ The application features a navigation bar with buttons to navigate to external r
 <br>
 
 ### Requirements & Dependencies
-jQuery is included directly in the HTML files using `<script>` a tag. This library is either hosted via Content Delivery Networks (CDNs) or included locally. 
+jQuery is included directly in the HTML files using `<script>` a tag. This library is hosted via a Content Delivery Network (CDN). 
 <br>
+<br>
+
 You will also need to install the following dependencies:   
 
 Python (version 3.10.9)
@@ -85,7 +88,7 @@ The ETL process for this project is performed in a Jupyter Notebook (`etl.ipynb`
  
 <br>
 
-### Build the Machine Learning Model
+#### Build the Machine Learning Model
 An appropriate binary classifier is built using the following steps:    
 
 1. **Separate the Data into Target and Features** The target variable is the `heart_disease` column, which contains binary values. The features are the remaining columns.
@@ -100,7 +103,7 @@ An appropriate binary classifier is built using the following steps:
 
 6. **Repeat the Process for Random Forest Classifier:** Repeat the process for  Random Forest Classifier, save the model, and compare the performance of the two models.  
 
-### Flask   
+#### Flask   
 The Flask API is created in a Python file (`app.py`). Here are the key steps in the API creation process:   
 
 1. **Set Up Dependencies:** Import Flask, render_template, joblib, and the other necessary dependencies. 
@@ -114,7 +117,7 @@ The Flask API is created in a Python file (`app.py`). Here are the key steps in 
 
 <br>
 
-### HTML Setup
+#### HTML Setup
 The HTML files (`index.html`and `result.html`) in this project is structured as follows:
 
 1. **Document Type Declaration:** `<!DOCTYPE html>` defines the document type and version of HTML being used.    
@@ -150,7 +153,7 @@ resources.
 3. Open the terminal at the folder containing the `app.py` file, ensure any virtual environments are activated, and run  appropriate command such as `flask run` to start the Flask server.
 4. Follow the `http` link in the terminal to open the dashboard in a browser. 
 
-#### Contributions
+### Contributions
 Contributions to this project are highly encouraged! If you wish to contribute, please follow these guidelines:
 
 - Fork the heart_disease_predictor_app repository and clone it locally.
