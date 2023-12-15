@@ -30,7 +30,7 @@ def generate_random_code():
 def predict():
     data = request.form.to_dict()
     
-    # Preprocess the input data
+    # Process the input data
     input_data = preprocess_input(data)
 
     # Make predictions using the loaded model
